@@ -3,7 +3,7 @@ main()
 def main() {
   timeout(time: 45, unit: 'MINUTES') {
     try {
-      node( 'macos') {
+      node( 'dind-1.0.0') {
         setupProperties()
         runPipeline()
       }
