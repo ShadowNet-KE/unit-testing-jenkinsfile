@@ -10,8 +10,6 @@ def main() {
     } catch (err) {
       currentBuild.result = 'FAILURE'
       throw err
-    } finally {
-      postBuildActions()
     }
   }
 }
